@@ -1,7 +1,8 @@
 from google.adk.agents import Agent
 
+# 全てのエントリーポイントとなるルートエージェントを定義します。
 root_agent = Agent(
-    name="greeting_agent",
+    name="greeting_agent", # 名前がディレクトリ名と一致していることが重要
     # https://ai.google.dev/gemini-api/docs/models
     model="gemini-2.0-flash",
     description="Greeting agent",
