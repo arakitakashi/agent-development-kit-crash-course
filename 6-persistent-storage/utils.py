@@ -131,7 +131,7 @@ async def call_agent_async(runner, user_id, session_id, query):
     )
 
     try:
-        async for event in runner.run_async(
+        async for event in runner.run_async( #Googleはランナーを非同期で実行することを推奨
             user_id=user_id, session_id=session_id, new_message=content
         ):
             # Process each event and get the final response if available
